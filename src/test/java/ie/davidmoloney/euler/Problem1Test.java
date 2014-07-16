@@ -12,8 +12,13 @@ public class Problem1Test {
     public static final int EXPECTED = 233_168;
 
     @Test
-    public void test_that_the_sum_of_multiples_of_3_and_5_under_one_thousand_return_233_168() throws Exception {
+    public void test_that_a_is_correct() throws Exception {
         checkResult(problem1.implA(MAX));
+    }
+
+    @Test
+    public void test_that_b_is_correct() throws Exception {
+        checkResult(problem1.implB(MAX));
     }
 
     private void checkResult(final int result) {
